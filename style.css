@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@100;300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-image: linear-gradient(to right, #DECBA4, #3E5151);
+}
+#calcTemp {
+    padding: 29px 67px;
+    min-height: 290px;
+    transition: all .4s ease;
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+label {
+    font-size: 30px;
+    line-height: 78px;
+}
+#temp {
+    width: 110px;
+    height: 34px;
+    border-radius: 5px;
+    margin: 12px;
+    padding: 8px;
+    background-image: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+#temp_diff {
+    width: 120px;
+    height: 34px;
+    border-radius: 5px;
+    margin: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+.btn {
+    width: 100px;
+    margin: 30px 0 20px 0;
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+    background-image: linear-gradient(to right, #fffbd5, #b20a2c);
+    padding: 5px;
+    transition: all 0.5s ease;
+}
+.btn:hover{
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
+    cursor: pointer;
+}
+#result{
+    font-size: 27px;
+    color: blue;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+@media(max-width:767px){
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        text-align: center;
+        background-color: rgba(16, 177, 177, 0.638);
+        width: 100%;
+        padding: 15px;
+    }
+    label {
+        font-size: 24px;
+        line-height: 40px;
+    }
+    select{
+        background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+        color: #00000094;
+    }
+    #calcTemp {
+        padding: 29px 67px;
+        min-height: 200px;
+        background-color: #b1128c94;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+}
